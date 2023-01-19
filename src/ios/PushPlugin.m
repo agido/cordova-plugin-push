@@ -342,10 +342,10 @@
 }
 
 - (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    if (self.callbackId == nil) {
-        NSLog(@"Unexpected call to didRegisterForRemoteNotificationsWithDeviceToken, ignoring: %@", deviceToken);
-        return;
-    }
+    // if (self.callbackId == nil) {
+    //     NSLog(@"Unexpected call to didRegisterForRemoteNotificationsWithDeviceToken, ignoring: %@", deviceToken);
+    //     return;
+    //}
     NSLog(@"Push Plugin register success: %@", deviceToken);
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000
